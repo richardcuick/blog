@@ -9,18 +9,19 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Richard Cui's Web Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Richard Cui`,
+      summary: `who certified as AWS SAP, TOGAF, PMP and Senior Architect`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://richardcuick.github.io/blog/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `richardcuick`,
     },
   },
   plugins: [
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -122,4 +123,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: `/blog/`,
 }

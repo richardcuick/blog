@@ -20,6 +20,9 @@ const Bio = () => {
           }
           social {
             twitter
+            linkedin
+            facebook
+            github
           }
         }
       }
@@ -43,13 +46,25 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+        <span>
+          <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank" rel="noreferrer">
+            <StaticImage src="../images/twitter.png" alt="Twitter" width={18} height={18}/>
           </a>
-        </p>
+          {` `}
+          <a href={`https://linkedin.com/in/${social?.linkedin || ``}`} target="_blank" rel="noreferrer">
+            <StaticImage src="../images/linkedin.png" alt="LinkedIn" width={18} height={18}/>
+          </a>
+          {` `}
+          <a href={`https://facebook.com/${social?.facebook || ``}`} target="_blank" rel="noreferrer">
+            <StaticImage src="../images/facebook.png" alt="Facebook" width={18} height={18}/>
+          </a>
+          {` `}
+          <a href={`https://github.com/${social?.github || ``}`} target="_blank" rel="noreferrer">
+            <StaticImage src="../images/github.png" alt="Github" width={18} height={18}/>
+          </a>
+        </span>
       )}
     </div>
   )

@@ -9,15 +9,22 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `桁椽博客`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `桁椽`,
+      summary: `技术架构师、解决方案架构师、企业架构师`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `桁椽博客`,
+    siteUrl: `https://richardcuick.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `richardcuick`,
+      linkedin: `richardcuick`,
+      facebook: `richardcuick`,
+      instagram: `richardcuick`,
+      github: `richardcuick`,
+      email: ``,
+      phone: ``,
+      wechat:``,
     },
   },
   plugins: [
@@ -102,7 +109,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Cui Richard Chikun's Blog RSS Feed",
           },
         ],
       },
@@ -110,8 +117,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Cui, Richard Chikun's Blog`,
+        short_name: `桁椽`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
